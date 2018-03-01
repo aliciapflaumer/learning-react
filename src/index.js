@@ -2,19 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// 2: changing the squares render method to show the value
+// with this.props.value
 class Square extends React.Component {
   render() {
     return (
       <button className="square">
-        {/* TODO */}
+        {this.props.value}
       </button>
     );
   }
 }
 
+// 1: passing a value prop to the square with value={i}
 class Board extends React.Component {
+
   renderSquare(i) {
-    return <Square />;
+    return <Square value={i} />;
   }
 
   render() {
