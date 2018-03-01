@@ -2,19 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// 2: changing the squares render method to show the value
-// with this.props.value
 class Square extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    }
+  }
+
   render() {
     return (
-      <button className="square">
-        {this.props.value}
+      <button className="square" onClick={() => this.setState({value: 'X'})}>
+        {this.state.value}
       </button>
     );
   }
 }
 
-// 1: passing a value prop to the square with value={i}
 class Board extends React.Component {
 
   renderSquare(i) {
