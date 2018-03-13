@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 // Replace the whole Square class with a Functional Component:
 function Square(props) {
   return (
