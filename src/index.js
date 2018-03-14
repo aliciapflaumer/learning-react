@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Game from './game';
 import Navigation from './navigation';
-
+import Center from 'react-center';
 
 // ========================================
 
 ReactDOM.render(
-  <div>
-    <Navigation />,
-    <Game />
-  </div>,
+  <Center>
+    <div>
+      <Navigation />,
+      <Game />
+    </div>
+  </Center>,
   document.getElementById('root')
 );
