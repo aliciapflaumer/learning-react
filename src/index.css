@@ -4,6 +4,11 @@ body {
   background-color: #ccc;
 }
 
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
+
 ol, ul {
   padding-left: 30px;
 }
@@ -12,6 +17,12 @@ ol, ul {
   clear: both;
   content: "";
   display: table;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 12px 10px 0 0;
+    list-style-type: none;
 }
 
 .status {
