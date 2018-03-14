@@ -1,14 +1,24 @@
 import React from 'react';
 
+import {
+  BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom';
+
 class Header extends React.Component {
   render() {
     return (
-      <nav className="navbar navbar-default">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-        </ul>
-      </nav>
+      <Router>
+        <div>
+          <nav className="navbar navbar-default">
+            <ul>
+              <li><Link to={"/home"}>Home</Link></li>
+              <li><Link to={"/about"}>About</Link></li>
+            </ul>
+          </nav>
+        </div>
+      </Router>
     )
   }
 }

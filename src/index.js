@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Game from './game';
+import Game from './home';
 import Navigation from './navigation';
 import Center from 'react-center';
+
 
 // ========================================
 
